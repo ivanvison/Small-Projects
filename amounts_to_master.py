@@ -58,7 +58,7 @@ def process_excel_file(file_path):
             company_names.append(company_name.replace('Total ', ''))
             total_amounts.append(total_amount)
 
-    with open(r"I:\List Alliant\Files\output.txt", 'w') as output_file:
+    with open(r"I:\Path-to-Folder\With-Files\output.txt", 'w') as output_file:
         output_file.write("Company Name - Total Amount - In Masterfile\n")
 
         for company, amount in zip(company_names, total_amounts):
